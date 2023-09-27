@@ -154,7 +154,7 @@ Here are the ENVs and what they mean.
 7. **Clone k8s-infra and Deploy**: The `k8s-manifest` repository, which contains Kubernetes manifests, is cloned using a deploy key. Then, Kustomize customizes the manifests, and the application is deployed to GKE.
     
     ```yaml
-    - name: Clone k8s-infra and Deploy
+    - name: Clone k8s-manifest and Deploy
       env:
         SSH_PRIVATE_KEY: ${{ secrets.GCP_GIT_K8_INFRA_ACCESS_SSH_SECRET }}
       run: |
