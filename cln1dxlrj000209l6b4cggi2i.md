@@ -148,7 +148,7 @@ Here are the ENVs and what they mean.
       uses: google-github-actions/get-gke-credentials@v1
       with:
         cluster_name: ${{ secrets.GCP_GKE_CLUSTER }}
-        location: ${{ secrets.GCP_GKE_ZONE }}  
+        location: ${{ secrets.GCP_GKE_ZONE }}
     ```
     
 7. **Clone k8s-infra and Deploy**: The `k8s-manifest` repository, which contains Kubernetes manifests, is cloned using a deploy key. Then, Kustomize customizes the manifests, and the application is deployed to GKE.
@@ -162,7 +162,7 @@ Here are the ENVs and what they mean.
         echo "$GCP_GIT_K8_INFRA_ACCESS_SSH_SECRET" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
         ssh-keyscan github.com >> ~/.ssh/known_hosts      
-        git clone git@github.com:callmedevops/k8s-infra.git
+        git clone git@github.com:callmedevops/k8s-manifest.git
         cd k8s-manifest/github-actions/$DEPLOYMENT_NAME/$ENVIRONMENT
         kustomize edit set image $GCP_GAR_LOCATION-docker.pkg.dev/$GCP_PROJECT_ID/$GCP_REPOSITORY/$DEPLOYMENT_NAME:$GITHUB_SHA
         kustomize build . | kubectl apply -f -
