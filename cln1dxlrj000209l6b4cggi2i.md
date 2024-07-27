@@ -4,6 +4,7 @@ seoTitle: "CICD Kubernetes GKE GitHub Action Kustomize Gcloud"
 datePublished: Wed Sep 27 2023 06:48:28 GMT+0000 (Coordinated Universal Time)
 cuid: cln1dxlrj000209l6b4cggi2i
 slug: mastering-cicd-with-github-actions-from-code-to-gke-and-beyond
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1722069155340/80e48dcb-bdc6-4a97-8ecb-6308c442a2c9.png
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1695797279763/64ab699b-e881-4232-89e7-b3f5954579ab.png
 tags: cicd-kubernetes-gke-github-action-kustomize-gcloud
 
