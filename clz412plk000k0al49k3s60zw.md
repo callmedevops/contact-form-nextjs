@@ -1,6 +1,6 @@
 ---
 title: "Quick Start to Monitoring, Alerting, and Logging in Kubernetes with Helm"
-seoTitle: "Quick Start to Monitoring, Alerting, logging in  Kubernetes(EKS, AKS, "
+seoTitle: "Quick Start to Monitoring, Alerting, logging in  Kubernetes(EKS, AKS,"
 seoDescription: "Quick Start to Monitoring, Alerting, logging in  Kubernetes(EKS, AKS, GCP) with Helm"
 datePublished: Sat Jul 27 2024 11:08:18 GMT+0000 (Coordinated Universal Time)
 cuid: clz412plk000k0al49k3s60zw
@@ -242,7 +242,7 @@ helm show values prometheus-community/prometheus-blackbox-exporter >> prometheus
 helm upgrade --install -f prometheus-blackbox-exporter-values.yaml prometheus-blackbox-exporter prometheus-community/prometheus-blackbox-exporter -n monitoring
 ```
 
-### Setting Up Alerting with Slack
+#### 6\. Set Up Blackbox Exporter for External Monitoring
 
 To configure alerting via Slack, you'll need a Slack webhook URL. Replace `TOKEN` with your actual Slack webhook URL and follow these configuration steps:
 
