@@ -242,7 +242,7 @@ helm show values prometheus-community/prometheus-blackbox-exporter >> prometheus
 helm upgrade --install -f prometheus-blackbox-exporter-values.yaml prometheus-blackbox-exporter prometheus-community/prometheus-blackbox-exporter -n monitoring
 ```
 
-#### 6\. Set Up Blackbox Exporter for External Monitoring
+#### 6\. **Setting Up Alerting with Slack**
 
 To configure alerting via Slack, you'll need a Slack webhook URL. Replace `TOKEN` with your actual Slack webhook URL and follow these configuration steps:
 
